@@ -1,0 +1,21 @@
+@yellow : #ffd84f;
+@brown  : #b57b1c;
+@gray   : #fafafa;
+@pink   : #f76579;
+@white  : #ffffff;
+
+html, body{
+  height     : 100%;
+  background : @gray;
+}
+
+.bounding-box(@width, @height){
+  height : @height;
+  width  : @width;
+}
+
+.rounded-corner(@topLeft, @topRight, @bottomLeft, @bottomRight){
+  border-radius         : @topLeft @topRight @bottomLeft @bottomRight;
+  -webkit-border-radius : @topLeft @topRight @bottomLeft @bottomRight;
+  -moz-border-radius    : @topLeft @topRight @bottomLeft @bottomRight;
+}

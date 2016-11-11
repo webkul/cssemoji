@@ -1,0 +1,41 @@
+/*Neutral Face*/
+.ce-neutral-face{
+  .bounding-box(90px, 90px);
+  .rounded-corner(50%, 50%, 50%, 50%);
+  position    : relative;
+  top         : 50%;
+  left        : 50%;
+  margin-top  : -45px;
+  margin-left : -45px;
+  background  : @yellow;
+
+  .ce-eyes{
+    position : relative;
+    top      : 30px;
+  }
+
+  .ce-eye{
+    .bounding-box(12px, 12px);
+    .rounded-corner(50%, 50%, 50%, 50%);
+    position   : absolute;
+    background : @brown;
+    animation  : ce-neutral-face-eye-anime 3s ease-in-out infinite;
+  }
+
+  .ce-eye-left{
+    left : 25px;
+  }
+
+  .ce-eye-right{
+    right : 25px;
+  }
+
+  .ce-mouth{
+    .bounding-box(30px, 6px);
+    position   : absolute;
+    bottom     : 25px;
+    left       : 30px;
+    background : @brown;
+    animation  : ce-neutral-face-mouth-anime 6s ease-in-out infinite;
+  }
+}

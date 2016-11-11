@@ -1,0 +1,82 @@
+html,
+body {
+  height: 100%;
+  background: #fafafa;
+}
+/*Neutral Face Animations*/
+@keyframes ce-neutral-face-eye-anime {
+  0%,
+  40% {
+    transform: scaleY(1);
+    transform-origin: center;
+  }
+  50% {
+    transform: scaleY(0.1);
+    transform-origin: center;
+  }
+  60%,
+  100% {
+    transform: scaleY(1);
+    transform-origin: center;
+  }
+}
+@keyframes ce-neutral-face-mouth-anime {
+  0%,
+  35% {
+    transform: scaleY(1);
+    transform-origin: center;
+  }
+  45%,
+  55% {
+    transform: scaleY(0.3);
+    transform-origin: center;
+  }
+  65%,
+  100% {
+    transform: scaleY(1);
+    transform-origin: center;
+  }
+}
+/*Neutral Face*/
+.ce-neutral-face {
+  height: 90px;
+  width: 90px;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -45px;
+  background: #ffd84f;
+}
+.ce-neutral-face .ce-eyes {
+  position: relative;
+  top: 30px;
+}
+.ce-neutral-face .ce-eye {
+  height: 12px;
+  width: 12px;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  background: #b57b1c;
+  animation: ce-neutral-face-eye-anime 3s ease-in-out infinite;
+}
+.ce-neutral-face .ce-eye-left {
+  left: 25px;
+}
+.ce-neutral-face .ce-eye-right {
+  right: 25px;
+}
+.ce-neutral-face .ce-mouth {
+  height: 6px;
+  width: 30px;
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  background: #b57b1c;
+  animation: ce-neutral-face-mouth-anime 6s ease-in-out infinite;
+}
