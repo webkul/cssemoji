@@ -1,0 +1,24 @@
+{
+  "name": "cssemoji",
+  "homepage": "https://github.com/webkul/cssemoji",
+  "authors": [
+    "Nitish Kumar <support@webkul.com>"
+  ],
+  "description": "Animated and Colorful CSS Emoji",
+  "main": "css/cssemoji.css",
+  "keywords": [
+    "cssemoji",
+    "emoji",
+    "neutral",
+    "smiley",
+    "animation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
