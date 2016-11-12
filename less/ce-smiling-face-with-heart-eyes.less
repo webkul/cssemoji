@@ -1,0 +1,66 @@
+/*Smiling Face with Heart Eyes*/
+.ce-smiling-face-with-heart-eyes {
+  .bounding-box(90px, 90px);
+  .rounded-corner(50%, 50%, 50%, 50%);
+  position    : relative;
+  top         : 50%;
+  left        : 50%;
+  margin-top  : -45px;
+  margin-left : -45px;
+  background  : @yellow;
+
+  .ce-eyes{
+    position : relative;
+    top      : 20px;
+  }
+
+  .ce-eye{
+    .bounding-box(22px, 22px);
+    position  : absolute;
+    animation : ce-smiling-face-heart-eyes-anime 2.5s ease-in-out infinite;
+  }
+
+  .ce-eye:before{
+    .bounding-box(16px, 24px);
+    .rounded-corner(10px, 10px, 0px, 0px);
+    content    : ' ';
+    position   : absolute;
+    display    : block;
+    background : @pink;
+    transform  : rotateZ(-45deg);
+  }
+
+  .ce-eye:after{
+    .bounding-box(16px, 24px);
+    .rounded-corner(10px, 10px, 0px, 0px);
+    content     : ' ';
+    position    : absolute;
+    display     : block;
+    margin-left : 6px;
+    background  : @pink;
+    transform   : rotateZ(45deg);
+  }
+
+  .ce-eye-left{
+    left : 18px;
+  }
+
+  .ce-eye-right{
+    right : 18px;
+  }
+
+  .ce-mouth{
+    .bounding-box(36px, 20px);
+    .rounded-corner(0px, 0px, 18px, 18px);
+    position   : absolute;
+    bottom     : 15px;
+    left       : 27px;
+    background : @brown;
+    animation  : ce-smiling-face-mouth-anime 2.5s ease-in-out infinite;
+
+    .ce-teeth{
+      height     : 3px;
+      background : @white;
+    }
+  }
+}

@@ -37,6 +37,44 @@ body {
     transform-origin: center;
   }
 }
+/*Smiling Face with Heart Eyes Animations*/
+@keyframes ce-smiling-face-heart-eyes-anime {
+  0% {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+  15% {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+  30% {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+  45% {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+  60%,
+  100% {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}
+@keyframes ce-smiling-face-mouth-anime {
+  0% {
+    transform: rotateZ(-10deg);
+    transform-origin: center top;
+  }
+  50% {
+    transform: rotateZ(10deg);
+    transform-origin: center top;
+  }
+  100% {
+    transform: rotateZ(-10deg);
+    transform-origin: center top;
+  }
+}
 /*Neutral Face*/
 .ce-neutral-face {
   height: 90px;
@@ -79,4 +117,75 @@ body {
   left: 30px;
   background: #b57b1c;
   animation: ce-neutral-face-mouth-anime 6s ease-in-out infinite;
+}
+/*Smiling Face with Heart Eyes*/
+.ce-smiling-face-with-heart-eyes {
+  height: 90px;
+  width: 90px;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -45px;
+  background: #ffd84f;
+}
+.ce-smiling-face-with-heart-eyes .ce-eyes {
+  position: relative;
+  top: 20px;
+}
+.ce-smiling-face-with-heart-eyes .ce-eye {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  animation: ce-smiling-face-heart-eyes-anime 2.5s ease-in-out infinite;
+}
+.ce-smiling-face-with-heart-eyes .ce-eye:before {
+  height: 24px;
+  width: 16px;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  content: ' ';
+  position: absolute;
+  display: block;
+  background: #f76579;
+  transform: rotateZ(-45deg);
+}
+.ce-smiling-face-with-heart-eyes .ce-eye:after {
+  height: 24px;
+  width: 16px;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  content: ' ';
+  position: absolute;
+  display: block;
+  margin-left: 6px;
+  background: #f76579;
+  transform: rotateZ(45deg);
+}
+.ce-smiling-face-with-heart-eyes .ce-eye-left {
+  left: 18px;
+}
+.ce-smiling-face-with-heart-eyes .ce-eye-right {
+  right: 18px;
+}
+.ce-smiling-face-with-heart-eyes .ce-mouth {
+  height: 20px;
+  width: 36px;
+  border-radius: 0px 0px 18px 18px;
+  -webkit-border-radius: 0px 0px 18px 18px;
+  -moz-border-radius: 0px 0px 18px 18px;
+  position: absolute;
+  bottom: 15px;
+  left: 27px;
+  background: #b57b1c;
+  animation: ce-smiling-face-mouth-anime 2.5s ease-in-out infinite;
+}
+.ce-smiling-face-with-heart-eyes .ce-mouth .ce-teeth {
+  height: 3px;
+  background: #ffffff;
 }
